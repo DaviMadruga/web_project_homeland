@@ -22,4 +22,4 @@ acessibilidade.
 
 Veja o projeto publicado em:
 
-https://DaviMadruga.github.io/web_project_homeland/
+https://davimadruga.github.io/web_project_homeland/
