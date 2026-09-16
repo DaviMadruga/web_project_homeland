@@ -123,6 +123,38 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .places {
+    max-width: 580px;
+    gap: 50px;
+  }
+
+  .place {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .place__title {
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 288px;
+  }
+
+  .place__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .place__button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .place__text {
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .places {
     max-width: 320px;
