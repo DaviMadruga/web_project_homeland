@@ -8,7 +8,7 @@
 
 .place {
   display: grid;
-  grid-template-columns: 460px 484px;
+  grid-template-columns: 460px 1fr;
   grid-template-areas:
     "title artists"
     "media paragraphs";
@@ -102,7 +102,7 @@
   }
 
   .place {
-    grid-template-columns: 340px 364px;
+    grid-template-columns: 340px 1fr;
     column-gap: 13px;
     row-gap: 36px;
   }
@@ -134,51 +134,39 @@
     flex-direction: column;
   }
 
+  .place__media {
+    display: contents;
+  }
+
   .place__title {
+    order: 1;
     font-size: 32px;
     line-height: 35px;
     max-width: 288px;
   }
 
   .place__image {
+    order: 3;
     width: 100%;
     height: auto;
   }
 
   .place__button {
+    order: 5;
     width: 100%;
     font-size: 14px;
+  }
+
+  .place__artists {
+    align-self: flex-start;
+    order: 2;
+  }
+
+  .place__paragraphs {
+    order: 4;
   }
 
   .place__text {
     margin: 0 auto;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .places {
-    max-width: 320px;
-    gap: 50px;
-  }
-
-  .place {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .place__title {
-    font-size: 32px;
-    line-height: 35px;
-    max-width: 288px;
-  }
-
-  .place__image {
-    width: 100%;
-    height: auto;
-  }
-
-  .place__button {
-    width: 100%;
-    font-size: 14px;
   }
 }
